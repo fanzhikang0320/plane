@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/Round1.jpg');
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+    background-position-y: 0px;
+    overflow: hidden;
+    position:relative;
+}
+.box.Round1{
+    background-image: url('/img/Round1.jpg');
+}
+.box.Round2{
+    background-image: url('./img/Round2.jpg');
+}
+.box.Round3{
+    background-image: url('./img/Round3.jpg');
+}
+.box.Round4{
+    background-image: url('./img/Round4.jpg');
+}
+
+.userPlane{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('./img/player.png');
+    
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    background-position: center center;
+    transform: rotateZ(-45deg);
+}
+.npcPlane{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('./img/player.png');
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
+    background-position: center center;
+    transform: rotateZ(135deg);
+  
+}
+.initGame{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+}
+.initGame .gameStart{
+    width: 150px;
+    height: 50px;
+    background-color: yellowgreen;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.initGame .gameStart:hover{
+    background-color: rgb(99, 236, 57);
+}
